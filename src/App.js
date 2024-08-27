@@ -16,7 +16,7 @@ const App = () => {
 
   // Handle screen size to determine if it is desktop or iPad view
   const handleResize = () => {
-    setIsDesktop(window.innerWidth >= 768); // md and above (iPad and desktop)
+    setIsDesktop(window.innerWidth >= 1024); // lg and above (desktop)
   };
 
   useEffect(() => {
@@ -98,7 +98,7 @@ const App = () => {
           </div>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {Array.from({ length: 6 }, (_, i) => (
               <div key={i} className={`${isNightMode ? 'bg-gradient-to-r from-blue-900 to-gray-800' : 'bg-gradient-to-r from-blue-400 to-blue-200'} p-6 rounded-lg shadow-lg`}>
                 <h2 className={`${isNightMode ? 'text-green-400' : 'text-blue-900'} text-xl font-bold`}>Feature {i + 1}</h2>
