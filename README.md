@@ -1,70 +1,83 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WritixAI Task - Responsive Web Application
 
-## Available Scripts
+## Overview
+This is a responsive web application created using React and Tailwind CSS. The project features a sidebar with navigation options, a customizable light/dark theme, a search bar, category selection, and a dynamic card layout. The layout adjusts automatically based on screen size, providing an optimal viewing experience for mobile, iPad, and desktop users.
 
-In the project directory, you can run:
+## Features
+- **Responsive Design:** 
+  - One card per row in mobile view.
+  - Two cards per row in iPad view.
+  - Three cards per row in desktop view.
+- **Sidebar:**
+  - A collapsible sidebar with options, visible on all screen sizes.
+  - Toggled by a burger button on smaller screens.
+- **Theme Toggle:** 
+  - Switch between day mode (light) and night mode (dark) with a single button click.
+- **Search Bar and Category Dropdown:** 
+  - Filter content based on user input and selected categories.
+- **Progress Bar:** 
+  - Displayed inside the sidebar, visually indicating progress.
 
-### `npm start`
+## Technology Stack
+- **React:** A JavaScript library for building user interfaces.
+- **Tailwind CSS:** A utility-first CSS framework for styling.
+- **JavaScript (ES6):** The programming language used for the frontend logic.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run this project locally, follow these steps:
 
-### `npm test`
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Gokkull04/writix-task.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Navigate to the project directory:**
+   ```bash
+   cd writix-task
+   ```
 
-### `npm run build`
+3. **Install dependencies:**
+   Make sure you have Node.js installed. Run the following command to install the required packages:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Start the development server:**
+   To start the application, run the following command:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **View in Browser:**
+   Open your browser and navigate to `http://localhost:3000` to view the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
+- `src/`
+  - `App.js`: Main component that handles layout, theme toggling, sidebar, and card display.
+  - `index.js`: Entry point for the React application.
+  - `index.css`: Global styles applied to the app.
 
-### `npm run eject`
+## Customization
+- **Theme Toggling:** 
+  Modify the `toggleTheme` function in `App.js` to change the styles for the light and dark modes.
+- **Card Content:** 
+  Update the content of the cards by changing the `Array.from({ length: 6 }, (_, i)` section inside the `App.js` file.
+- **Category Options:** 
+  Customize the categories by modifying the `<select>` element in `App.js`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Responsive Design
+The app uses Tailwind CSS grid utilities to achieve a responsive layout. The following classes are used:
+- `grid-cols-1`: For mobile view (1 card per row).
+- `md:grid-cols-2`: For iPad view (2 cards per row).
+- `lg:grid-cols-3`: For desktop view (3 cards per row).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact
+For any questions or suggestions, feel free to reach out:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email:** gokkull04@gmail.com
+- **GitHub:** https://github.com/Gokkull04
